@@ -18,6 +18,7 @@
 ** not clear to you.
 **
 ****************************************************************************/
+#define HAVE_POSTGRESQL
 
 #ifndef HAVE_POSTGRESQL
 #error PostgreSQLLog.h included, but HAVE_POSTGRESQL not defined

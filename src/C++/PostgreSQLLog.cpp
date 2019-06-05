@@ -39,7 +39,7 @@ const std::string PostgreSQLLogFactory::DEFAULT_DATABASE = "quickfix";
 const std::string PostgreSQLLogFactory::DEFAULT_USER = "postgres";
 const std::string PostgreSQLLogFactory::DEFAULT_PASSWORD = "";
 const std::string PostgreSQLLogFactory::DEFAULT_HOST = "localhost";
-const short PostgreSQLLogFactory::DEFAULT_PORT = 0;
+const short PostgreSQLLogFactory::DEFAULT_PORT = 5432;
 
 PostgreSQLLog::PostgreSQLLog
 ( const SessionID& s, const DatabaseConnectionID& d, PostgreSQLConnectionPool* p )

@@ -40,6 +40,9 @@
 #include <Acceptor.h>
 #include <SocketAcceptor.h>
 #include <DataDictionary.h>
+#include <PostgreSQLConnection.h>
+#include <PostgreSQLLog.h>
+#include <PostgreSQLStore.h>
 typedef FIX::UtcTimeStamp UtcTimeStamp;
 typedef FIX::UtcDate UtcDate;
 typedef FIX::UtcTimeOnly UtcTimeOnly;
@@ -62,6 +65,13 @@ typedef FIX::MessageStore MessageStore;
 typedef FIX::MessageStoreFactory MessageStoreFactory;
 typedef FIX::Mutex Mutex;
 typedef FIX::DOMDocumentPtr DOMDocumentPtr;
+typedef FIX::PostgreSQLQuery PostgreSQLQuery;
+typedef FIX::PostgreSQLConnection PostgreSQLConnection;
+typedef FIX::PostgreSQLLog PostgreSQLLog;
+typedef FIX::PostgreSQLLogFactory PostgreSQLLogFactory;
+typedef FIX::PostgreSQLStore PostgreSQLStore;
+typedef FIX::PostgreSQLStoreFactory PostgreSQLStoreFactory;
+typedef FIX::DatabaseConnectionID DatabaseConnectionID;
 %}
 
 %typedef DoubleField PriceField;
@@ -166,3 +176,6 @@ typedef FIX::DOMDocumentPtr DOMDocumentPtr;
 %include "../C++/Acceptor.h"
 %include "../C++/SocketAcceptor.h"
 %include "../C++/DataDictionary.h"
+%include "../C++/PostgreSQLConnection.h"
+%include "../C++/PostgreSQLLog.h"
+%include "../C++/PostgreSQLStore.h"
